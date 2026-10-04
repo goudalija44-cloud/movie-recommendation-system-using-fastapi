@@ -10,17 +10,17 @@ The trained recommendation components are served through a **FastAPI REST API**,
 
 ## 🚀 Live Demo
 
-### 🌐 Frontend
+### 🎬 Frontend
 
-The frontend can be run locally and connected to the deployed FastAPI backend.
+[Open CineMatch Movie Recommendation Website](https://goudalija44-cloud.github.io/movie-recommendation-system-using-fastapi/)
 
 ### 🔗 FastAPI API
 
-[CineMatch FastAPI API](https://movie-recommendation-api-2671.onrender.com?utm_source=chatgpt.com)
+[Open FastAPI API](https://movie-recommendation-api-2671.onrender.com)
 
 ### 📚 Swagger API Documentation
 
-[Open Swagger Documentation](https://movie-recommendation-api-2671.onrender.com/docs?utm_source=chatgpt.com)
+[Open Swagger Documentation](https://movie-recommendation-api-2671.onrender.com/docs)
 
 ### ❤️ API Health Check
 
