@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineMatch - Movie Recommendation System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            🎬 CineMatch
+        </div>
+
+        <div class="nav-text">
+            AI Movie Recommendation System
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <p class="badge">AI POWERED RECOMMENDATIONS</p>
+
+            <h1>
+                Find Your Next
+                <span>Favorite Movie</span>
+            </h1>
+
+            <p class="description">
+                Enter a movie you love and CineMatch will recommend
+                five similar movies using machine learning.
+            </p>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="movieInput"
+                    placeholder="Enter a movie name..."
+                >
+
+                <button id="recommendBtn">
+                    Recommend
+                </button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <section class="results-section">
+
+            <div class="results-header">
+
+                <h2>Recommended Movies</h2>
+
+                <span id="resultCount"></span>
+
+            </div>
+
+
+            <div id="recommendations" class="movie-grid">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">🎥</div>
+
+                    <h3>Your recommendations will appear here</h3>
+
+                    <p>
+                        Search for a movie above to get started.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Built with Python • FastAPI • Machine Learning
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

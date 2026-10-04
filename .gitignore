@@ -1,4 +1,4 @@
-__pycache__/
+**pycache**/
 *.py[cod]
 
 .venv/
@@ -9,3 +9,9 @@ env/
 .DS_Store
 
 .env
+.env.*
+
+.vscode/
+.idea/
+
+*.log

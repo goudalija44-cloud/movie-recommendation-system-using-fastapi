@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #090909;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #252525;
+    background: #0d0d0d;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-text {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* Main */
+
+main {
+    width: 100%;
+}
+
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 90px 20px 70px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #2a1111 0%,
+            #090909 55%
+        );
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 14px;
+    margin-bottom: 22px;
+
+    border: 1px solid #7d2020;
+    border-radius: 20px;
+
+    color: #ff6b6b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.05;
+
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h1 span {
+    display: block;
+    color: #e50914;
+}
+
+.description {
+    max-width: 620px;
+
+    margin: 25px auto 35px;
+
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* Search */
+
+.search-box {
+    max-width: 650px;
+    margin: auto;
+
+    display: flex;
+
+    background: #151515;
+
+    border: 1px solid #333;
+    border-radius: 12px;
+
+    padding: 6px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 16px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+    font-size: 16px;
+}
+
+.search-box input::placeholder {
+    color: #777;
+}
+
+.search-box button {
+    padding: 0 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #e50914;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background: #f6121d;
+}
+
+.search-box button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* Message */
+
+#message {
+    margin-top: 18px;
+    color: #ff7777;
+}
+
+
+/* Results */
+
+.results-section {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 60px 25px 80px;
+}
+
+.results-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.results-header h2 {
+    font-size: 28px;
+}
+
+#resultCount {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* Movie Grid */
+
+.movie-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* Movie Card */
+
+.movie-card {
+    background: #141414;
+
+    border: 1px solid #292929;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    min-height: 190px;
+
+    transition:
+        transform 0.2s,
+        border-color 0.2s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    border-color: #e50914;
+}
+
+.movie-number {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: #2a0d0d;
+    color: #ff5555;
+
+    font-weight: bold;
+}
+
+.movie-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.genre {
+    padding: 5px 9px;
+
+    border-radius: 15px;
+
+    background: #242424;
+
+    color: #aaa;
+
+    font-size: 12px;
+}
+
+
+/* Empty State */
+
+.empty-state {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    border: 1px dashed #333;
+    border-radius: 15px;
+
+    color: #777;
+}
+
+.empty-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.empty-state h3 {
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+
+/* Loading */
+
+.loading {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 60px;
+
+    color: #aaa;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    border-top: 1px solid #222;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 18px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-box button {
+        height: 50px;
+    }
+
+    .results-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
